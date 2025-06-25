@@ -31,7 +31,7 @@ function App() {
   return (
     <div>
       <InpView />
-      <BrowserRouter>
+      <BrowserRouter basename="/INP_DEMO">
         <Routes>
           <Route path="/render/basic-bad" element={<BasicBad />} />
           <Route path="/render/basic-good" element={<BasicGood />} />
