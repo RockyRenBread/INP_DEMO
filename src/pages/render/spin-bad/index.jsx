@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import { Button, Spin } from "shineout";
-import InpView from "../../../components/inp-view";
 import CardList from "./components/card-list";
 import { useStore } from "./store";
 import "./index.css";
@@ -14,7 +13,6 @@ const View = () => {
 
   return (
     <Spin className="container" loading={loading}>
-      <InpView />
       <Button
         onClick={() => {
           useStore.getState()?.load();
@@ -22,6 +20,7 @@ const View = () => {
       >
         刷新数据
       </Button>
+      {/* 这是一个渲染很耗时的List组件，loading变化时会立即重新渲染 */}
       <CardList />
     </Spin>
   );
