@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Button, Spin } from "shineout";
+import { Button, Spin } from "antd";
 import CardList from "./components/card-list";
 import { useStore } from "./store";
 import "./index.css";
@@ -12,7 +12,7 @@ const View = () => {
   }, []);
 
   return (
-    <Spin className="container" loading={loading}>
+    <Spin className="container" spinning={loading}>
       <Button
         onClick={() => {
           useStore.getState()?.load();

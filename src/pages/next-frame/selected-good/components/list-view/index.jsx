@@ -1,6 +1,6 @@
 import { useState, useTransition, useEffect, memo } from "react";
 import { useStore } from "../../store";
-import { Checkbox } from "shineout";
+import { Checkbox } from "antd";
 
 const SingleCheckbox = memo((props) => {
   const [optimisticChecked, setOptimisticChecked] = useState(null);

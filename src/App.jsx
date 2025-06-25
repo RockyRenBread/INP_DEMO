@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import InpView from "./components/inp-view";
 
 import BasicBad from "./pages/render/basic-bad";
@@ -31,7 +31,8 @@ function App() {
   return (
     <div>
       <InpView />
-      <BrowserRouter basename="/INP_DEMO">
+
+      <HashRouter>
         <Routes>
           <Route path="/render/basic-bad" element={<BasicBad />} />
           <Route path="/render/basic-good" element={<BasicGood />} />
@@ -90,7 +91,7 @@ function App() {
             element={<LazyloadListGood />}
           />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }

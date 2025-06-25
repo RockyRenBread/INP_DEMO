@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import { Card } from "shineout";
+import { Card } from "antd";
 
 const Lazyload = ({ placeholder, children }) => {
   const [isInView, setIsInView] = useState(false);

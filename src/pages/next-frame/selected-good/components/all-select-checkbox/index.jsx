@@ -1,6 +1,6 @@
 import { useState, useTransition, useEffect } from "react";
 import { useStore } from "../../store";
-import { Checkbox } from "shineout";
+import { Checkbox } from "antd";
 
 const AllSelectCheckbox = () => {
   // 乐观UI：优先渲染全选的 checked 状态

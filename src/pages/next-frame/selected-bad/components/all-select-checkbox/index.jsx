@@ -1,5 +1,5 @@
 import { useStore } from "../../store";
-import { Checkbox } from "shineout";
+import { Checkbox } from "antd";
 
 const AllSelectCheckbox = () => {
   const allChecked = useStore((state) => {

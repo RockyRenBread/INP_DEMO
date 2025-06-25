@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useStore } from "./store";
-import { Input } from "shineout";
+import { Input } from "antd";
 
 // labelList 数据变化只会影响 LabelView 的重复渲染
 const LabelView = (props) => {

@@ -1,4 +1,4 @@
-import { Card } from "shineout";
+import { Card } from "antd";
 import { useStore } from "../../store";
 
 const CardList = () => {

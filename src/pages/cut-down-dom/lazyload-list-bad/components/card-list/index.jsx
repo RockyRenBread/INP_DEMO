@@ -1,4 +1,4 @@
-import { Card } from "shineout";
+import { Card } from "antd";
 
 const CardList = (props) => {
   const { list } = props;
